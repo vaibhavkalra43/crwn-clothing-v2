@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import {  useState } from 'react';
 
 import FormInput from '../form-input/form-input.component';
 import Button from '../button/button.component';
@@ -25,8 +25,8 @@ const SignInForm = () => {
   };
 
   const signInWithGoogle = async () => {
-    const { user } = await signInWithGooglePopup();
-    await createUserDocumentFromAuth(user);
+      await signInWithGooglePopup();
+
   };
 
   const handleSubmit = async (event) => {
